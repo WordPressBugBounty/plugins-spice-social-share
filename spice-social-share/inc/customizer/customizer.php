@@ -1,4 +1,6 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 // Adding customizer settings
 function spice_social_share_customizer_controls($wp_customize)
 {

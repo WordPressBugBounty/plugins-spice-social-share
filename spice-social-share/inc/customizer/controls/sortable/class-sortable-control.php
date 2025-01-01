@@ -19,8 +19,8 @@ class Spice_Social_Share_Control_Sortable extends WP_Customize_Control {
     
 	public function enqueue() {
 
-		wp_enqueue_script( 'spice-social-share-sortable', SPICE_SOCIAL_SHARE_URL . '/inc/customizer/controls/sortable/sortable.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), false, true );
-		wp_enqueue_style( 'spice-social-share-sortable', SPICE_SOCIAL_SHARE_URL . '/inc/customizer/controls/sortable/sortable.css', null );
+		wp_enqueue_script( 'spice-social-share-sortable', SPICE_SOCIAL_SHARE_URL . '/inc/customizer/controls/sortable/sortable.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-sortable' ), SPICE_SOCIAL_SHARE_VERSION, true );
+		wp_enqueue_style( 'spice-social-share-sortable', SPICE_SOCIAL_SHARE_URL . '/inc/customizer/controls/sortable/sortable.css', array(), SPICE_SOCIAL_SHARE_VERSION );
 
 
 	}

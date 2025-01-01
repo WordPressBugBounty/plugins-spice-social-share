@@ -3,10 +3,10 @@
 * Plugin Name:			Spice Social Share
 * Plugin URI:  			
 * Description: 			This plugin allows you to add social share buttons to your posts. The plugin is flexible and easy to use.
-* Version:     			1.2.1
+* Version:     			1.2.2
 * Requires at least: 	5.3
 * Requires PHP: 		5.2
-* Tested up to: 		6.5.3
+* Tested up to: 		6.7.1
 * Author:      			Spicethemes
 * Author URI:  			https://spicethemes.com
 * License: 				GPLv2 or later
@@ -54,7 +54,7 @@ final class Spice_Social_Share {
 	{
 		$this->plugin_url  = plugin_dir_url( __FILE__ );
 		$this->plugin_path = plugin_dir_path( __FILE__ );
-		$this->version     = '0.1';
+		$this->version     = '1.2.2';
 
 		define( 'SPICE_SOCIAL_SHARE_URL', $this->plugin_url );
 		define( 'SPICE_SOCIAL_SHARE_PATH', $this->plugin_path );
@@ -92,7 +92,7 @@ final class Spice_Social_Share {
 	*/
 	public function social_share_admin_script()
 	{
-		wp_enqueue_style('spice-social-share-admin', SPICE_SOCIAL_SHARE_URL .'assets/css/admin.css');
+		wp_enqueue_style('spice-social-share-admin', SPICE_SOCIAL_SHARE_URL .'assets/css/admin.css', array(), SPICE_SOCIAL_SHARE_VERSION);
 	}
 
 
@@ -101,9 +101,9 @@ final class Spice_Social_Share {
 	*/
 	public function social_share_enqueue_scripts()
 	{
-		wp_enqueue_style('spice-social-share-font-awesome', SPICE_SOCIAL_SHARE_URL . 'assets/css/font-awesome/css/all.min.css');
-		wp_enqueue_style('spice-social-share-custom', SPICE_SOCIAL_SHARE_URL . 'assets/css/custom.css');
-		wp_enqueue_script('spice-social-share-custom', SPICE_SOCIAL_SHARE_URL . 'assets/js/socialshare.js', array('jquery'), '', true );
+		wp_enqueue_style('spice-social-share-font-awesome', SPICE_SOCIAL_SHARE_URL . 'assets/css/font-awesome/css/all.min.css', array(), '6.5.1');
+		wp_enqueue_style('spice-social-share-custom', SPICE_SOCIAL_SHARE_URL . 'assets/css/custom.css', array(), SPICE_SOCIAL_SHARE_VERSION);
+		wp_enqueue_script('spice-social-share-custom', SPICE_SOCIAL_SHARE_URL . 'assets/js/socialshare.js', array('jquery'), SPICE_SOCIAL_SHARE_VERSION, true );
 	}
 
 

@@ -38,8 +38,8 @@ if (!class_exists('Spice_Social_Share_Toggle_Control')) {
         }
 
         public function enqueue() {
-            wp_enqueue_style('spice-social-share-toggle', SPICE_SOCIAL_SHARE_URL . 'inc/customizer/controls/toggle/toggle.css', null);
-            wp_enqueue_script('spice-social-share-toggle', SPICE_SOCIAL_SHARE_URL . 'inc/customizer/controls/toggle/toggle.js', array('jquery'), false, true); //for toggle        
+            wp_enqueue_style('spice-social-share-toggle', SPICE_SOCIAL_SHARE_URL . 'inc/customizer/controls/toggle/toggle.css', array(), SPICE_SOCIAL_SHARE_VERSION);
+            wp_enqueue_script('spice-social-share-toggle', SPICE_SOCIAL_SHARE_URL . 'inc/customizer/controls/toggle/toggle.js', array('jquery'), SPICE_SOCIAL_SHARE_VERSION, true); //for toggle        
         }
 
         protected function content_template() {

@@ -1,13 +1,15 @@
 === Spice Social Share ===
 
 Contributors: 		spicethemes
-Tags: 				social, share, facebook share, twitter share, pinterest share, linkedin share, whatsapp, print
+Tags: 			social, facebook share, twitter share, linkedin share, whatsapp
 Requires at least: 	5.3
 Requires PHP: 		5.2
-Tested up to: 		6.5.3
-Stable tag: 		1.2.1
-License: 			GPLv2 or later
+Tested up to: 		6.7.1
+Stable tag: 		1.2.2
+License: 		GPLv2 or later
 License URI: 		https://www.gnu.org/licenses/gpl-2.0.html
+
+Effortlessly add social share buttons to your posts.
 
 == Description ==
 
@@ -20,6 +22,9 @@ This plugin allows you to add social share buttons to your posts. The plugin is 
 * To find the Typography And Color settings Go to Appearance >> Customize >>Spice Social Share>> Find the respective settings.
 
 == Changelog ==
+
+@Version 1.2.2
+* Fixed PCP plugin related issues.
 
 @Version 1.2.1
 * Fixed Warning deprecated dynamic property creation by adding public variables plugin_url and plugin_path inside the class Spice_Social_Share
